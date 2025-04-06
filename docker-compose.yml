@@ -41,7 +41,7 @@ services:
       # - judger_debug=1
 
   oj-backend:
-    image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
+    image: crpi-2a3upr22feak7jib.cn-hangzhou.personal.cr.aliyuncs.com/oj_backend/oj_backend:1.0
     restart: always
     depends_on:
       - oj-redis
