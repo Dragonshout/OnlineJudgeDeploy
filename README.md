@@ -62,6 +62,13 @@ Windows 下的安装仅供体验，勿在生产环境使用。如有必要，请
 
 若需要对系统进行修改或二次开发，请参照各模块的**README**，修改完成后需自行构建Docker镜像并修改`docker-compose.yml`
 
+## 导入数据库
+1.docker exec -it onlinejudgedeploy_oj-postgres_1 psql -U onlinejudge -d postgres -c "DROP DATABASE onlinejudge;"
+2.docker exec -it onlinejudgedeploy_oj-postgres_1 psql -U onlinejudge -d postgres -c "CREATE DATABASE onlinejudge;"
+3.docker exec -i  onlinejudgedeploy_oj-postgres_1 psql -U onlinejudge -d onlinejudge < onlinejudge.sql
+
+
+
 ## 遇到了问题？
 
 请参照: [http://opensource.qduoj.com/](http://opensource.qduoj.com/#/onlinejudge/faq) ，如有其他问题请入群讨论或提issue。
