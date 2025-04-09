@@ -69,7 +69,8 @@ Windows 下的安装仅供体验，勿在生产环境使用。如有必要，请
 
 3.docker exec -i  onlinejudgedeploy_oj-postgres_1 psql -U onlinejudge -d onlinejudge < onlinejudge.sql
 
-
+## 查重需要给data数据库赋予权限
+需要在文件夹下运行chmod -R 777 data
 
 ## 遇到了问题？
 
