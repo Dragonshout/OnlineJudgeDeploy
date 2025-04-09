@@ -64,7 +64,9 @@ Windows 下的安装仅供体验，勿在生产环境使用。如有必要，请
 
 ## 导入数据库
 1.docker exec -it onlinejudgedeploy_oj-postgres_1 psql -U onlinejudge -d postgres -c "DROP DATABASE onlinejudge;"
+
 2.docker exec -it onlinejudgedeploy_oj-postgres_1 psql -U onlinejudge -d postgres -c "CREATE DATABASE onlinejudge;"
+
 3.docker exec -i  onlinejudgedeploy_oj-postgres_1 psql -U onlinejudge -d onlinejudge < onlinejudge.sql
 
 
