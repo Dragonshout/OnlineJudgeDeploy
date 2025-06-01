@@ -41,7 +41,7 @@ services:
       # - judger_debug=1
 
   oj-backend:
-    image: crpi-2a3upr22feak7jib.cn-hangzhou.personal.cr.aliyuncs.com/oj_backend/oj_backend:4.2
+    image: crpi-2a3upr22feak7jib.cn-hangzhou.personal.cr.aliyuncs.com/oj_backend/oj_backend:5.0
     restart: always
     depends_on:
       - oj-redis
